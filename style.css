@@ -22,19 +22,20 @@ nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-9px;height:1p
 nav a:hover:after,nav a.on:after{right:0}
 .menu{display:none}
 .hero{min-height:760px;height:100svh;display:grid;grid-template-columns:52% 48%;position:relative;overflow:hidden;color:#fff;background:var(--navy)}
-.hero-photo{background:linear-gradient(90deg,rgba(7,27,45,.08),rgba(7,27,45,.52)),url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=88") center/cover}
-.hero-panel{padding:145px 4vw 90px 5vw;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(145deg,#0a2740,#061827)}
+.hero-photo{padding:140px 6vw 75px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,#061522,#0b3048);position:relative;overflow:hidden}
+.hero-photo:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(20% - 1px),rgba(95,183,216,.08) 20%)}
+.layer-copy{position:relative;z-index:1}.layer-copy p{color:var(--aqua);font:700 11px "DM Sans";letter-spacing:.22em}.layer-copy h2{max-width:600px;color:#fff;font-size:clamp(2.2rem,3.5vw,4rem);line-height:1.5}.layer-stack{position:relative;z-index:1;list-style:none;padding:0;margin:0;width:min(610px,100%)}.layer-stack li{height:54px;padding:0 18px;display:flex;align-items:center;gap:25px;border-top:1px solid rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.04);transform:translateX(calc(var(--n,0)*18px))}.layer-stack li:nth-child(1){--n:3;background:rgba(95,183,216,.34)}.layer-stack li:nth-child(2){--n:2;background:rgba(22,123,176,.28)}.layer-stack li:nth-child(3){--n:1}.layer-stack b{color:var(--aqua);font:600 12px "DM Sans"}.layer-stack span{font:600 11px "DM Sans";letter-spacing:.18em}
+.hero-panel{min-width:0;padding:125px 3vw 75px 4.5vw;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(145deg,#0a2740,#061827)}
 .hero-panel:before{content:"";position:absolute;right:-12%;top:-20%;width:48vw;height:48vw;border:1px solid rgba(95,183,216,.16);border-radius:50%}
 .en,.label{color:var(--blue);font:700 11px "DM Sans";letter-spacing:.22em}
 .hero .en{color:var(--aqua)}
-.hero h1{margin:22px 0 25px;font-size:clamp(3.1rem,4.15vw,4.35rem);line-height:1.3;position:relative}
-.hero h1 span,.hero h1 em{display:block;white-space:nowrap}
+.hero h1{margin:20px 0 22px;font-size:clamp(2.75rem,3.55vw,3.75rem);line-height:1.32;position:relative}
+.hero h1 span,.hero h1 em{display:block;width:max-content;max-width:none;white-space:nowrap!important}
 .hero h1 em{font-style:normal;color:var(--aqua)}
 .hero .lead{color:#b8cbd4;position:relative}
 .hero-panel>div{display:flex;align-items:center;gap:28px;margin-top:28px;position:relative}
 .button{min-height:58px;padding:15px 27px;display:inline-flex;align-items:center;justify-content:center;color:#fff;background:var(--blue);border:0;font-weight:700;cursor:pointer}
 .line-link{font-size:13px;font-weight:700;border-bottom:1px solid currentColor}
-.hero-index{position:absolute;left:30px;bottom:25px;font:600 10px "DM Sans";letter-spacing:.2em}
 .diagnosis{max-width:var(--max);margin:auto;padding:140px 30px;display:grid;grid-template-columns:1.2fr .8fr;gap:120px}
 .diagnosis h2,.service-lead h2,.message h2,.contact-wrap h2{font-size:clamp(2.4rem,4.5vw,4.8rem);line-height:1.5}
 .diagnosis>div:last-child{padding-top:55px;color:var(--muted)}
@@ -129,7 +130,7 @@ nav{position:fixed;inset:72px 0 0;padding:55px 30px;display:flex;flex-direction:
 nav.open{transform:none}
 nav a{font-size:20px}
 .hero{height:auto;grid-template-columns:1fr}
-.hero-photo{min-height:520px}
+.hero-photo{min-height:520px;padding:110px 35px 55px}
 .hero-panel{min-height:640px;padding:100px 35px}
 .diagnosis,.message,.contact-wrap{grid-template-columns:1fr;gap:45px}
 .diagnosis,.message,.contact-wrap{padding-top:90px;padding-bottom:90px}
@@ -148,7 +149,7 @@ nav a{font-size:20px}
 .hero-photo{min-height:430px}
 .hero-panel{min-height:610px;padding:85px 25px}
 .hero h1{font-size:clamp(2.75rem,12vw,3.55rem)}
-.hero h1 span,.hero h1 em{white-space:normal}
+.hero h1 span,.hero h1 em{width:auto;white-space:normal!important}
 .hero-panel>div{align-items:flex-start;flex-direction:column}
 .diagnosis h2,.service-lead h2,.message h2,.contact-wrap h2{font-size:2.4rem}
 .section-title{grid-template-columns:1fr}
