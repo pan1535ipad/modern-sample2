@@ -254,3 +254,7 @@ footer{background:#101216}
   .diagnosis h2,.service-lead h2,.message h2,.contact-wrap h2{font-size:clamp(2rem,9.5vw,2.55rem);line-height:1.5}
   .page-hero h1{font-size:clamp(2.65rem,12vw,3.35rem)}
 }
+
+
+/* Meaning-based mobile line breaks — 2026-09-15 */
+@media(max-width:600px){.sp-line{display:block!important}p br{display:block!important}}
