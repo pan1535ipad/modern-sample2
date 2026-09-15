@@ -242,3 +242,15 @@ main,body>footer{margin-left:200px}
 footer{background:#101216}
 @media(max-width:900px){header{width:auto;padding:0 20px;background:#101216}header.solid{background:#101216}main,body>footer{margin-left:0}.hero{grid-template-columns:1fr;grid-template-areas:"copy" "art"}.hero-panel{padding:120px 35px 90px}.hero-panel:before{left:35px;top:7%;font-size:5rem}.hero-photo{padding:70px 40px}.hero-photo:before{width:70vw;height:70vw}.hero-photo:after{right:15px}.hero-photo .layer-stack{transform:rotate(-4deg)}}
 @media(max-width:600px){.hero-panel{padding:110px 25px 80px}.hero-panel:before{left:25px;font-size:3.8rem}.hero h1{font-size:3.2rem}.hero-photo{padding:65px 25px}.layer-stack li{height:58px}}
+
+/* Mobile Japanese line-break refinement 2026-09-15 */
+@media(max-width:600px){
+  h1,h2,h3{text-wrap:balance;line-break:strict;overflow-wrap:normal}
+  p,li,dd{line-break:strict;overflow-wrap:anywhere}
+  p br{display:none}
+  h1 br,h2 br,h3 br{display:block}
+  .hero h1{font-size:clamp(2.65rem,12vw,3.25rem);line-height:1.27}
+  .hero h1 span,.hero h1 em{width:auto;white-space:normal!important}
+  .diagnosis h2,.service-lead h2,.message h2,.contact-wrap h2{font-size:clamp(2rem,9.5vw,2.55rem);line-height:1.5}
+  .page-hero h1{font-size:clamp(2.65rem,12vw,3.35rem)}
+}
