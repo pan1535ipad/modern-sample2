@@ -280,3 +280,19 @@ p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:norma
   .semantic-cta{font-size:clamp(1.9rem,7.8vw,2.1rem)!important;line-height:1.55!important;letter-spacing:-.025em}
   .semantic-cta>span{display:block;width:max-content;max-width:100%;white-space:nowrap}
 }
+
+
+/* Fix nested term wrappers inside symptom cards. */
+.symptoms > div > span > span{
+  display:inline!important;
+  min-height:0!important;
+  width:auto!important;
+  max-width:none!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  background:none!important;
+  text-align:inherit!important;
+  place-items:initial!important;
+  white-space:inherit!important;
+}
