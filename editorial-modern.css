@@ -291,3 +291,7 @@ footer{background:#101216}
     p,li,dd{word-break:auto-phrase}
   }
 }
+
+
+/* Do not split technical compound terms across mobile lines. */
+@media(max-width:600px){.keep-word{white-space:nowrap}}
