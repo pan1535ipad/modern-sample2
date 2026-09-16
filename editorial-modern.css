@@ -268,3 +268,15 @@ html{line-break:strict}
 h1,h2,h3,.lead,.catch,.copy{text-wrap:balance;overflow-wrap:normal;word-break:normal}
 p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:normal}
 @supports (word-break:auto-phrase){h1,h2,h3,.lead,.catch,.copy,p,li,dt,dd,figcaption{word-break:auto-phrase}}
+
+
+/* Mobile fixes: symptom names, decorative circle and CTA lines */
+.symptom-keep{white-space:nowrap;word-break:keep-all;overflow-wrap:normal}
+.semantic-cta>span{display:inline}
+@media(max-width:600px){
+  .page-hero:after{display:none!important}
+  .page-hero{isolation:isolate}
+  .symptoms .symptom-keep{white-space:nowrap!important;word-break:keep-all!important;overflow-wrap:normal!important}
+  .semantic-cta{font-size:clamp(1.9rem,7.8vw,2.1rem)!important;line-height:1.55!important;letter-spacing:-.025em}
+  .semantic-cta>span{display:block;width:max-content;max-width:100%;white-space:nowrap}
+}
