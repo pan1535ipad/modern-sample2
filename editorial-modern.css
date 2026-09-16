@@ -296,3 +296,17 @@ p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:norma
   place-items:initial!important;
   white-space:inherit!important;
 }
+
+
+/* Desktop precision panel: use the full left column and preserve semantic lines. */
+@media(min-width:901px){
+  .precision-copy{padding:110px 4vw 90px 8vw}
+  .precision-title{font-size:clamp(2rem,3.15vw,4rem)!important;line-height:1.45!important}
+  .precision-title>span{
+    display:block;
+    width:max-content;
+    max-width:100%;
+    white-space:nowrap;
+    text-wrap:nowrap;
+  }
+}
