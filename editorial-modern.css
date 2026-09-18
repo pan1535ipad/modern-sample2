@@ -310,3 +310,9 @@ p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:norma
     text-wrap:nowrap;
   }
 }
+
+/* Approved phrase boundaries, preserving existing heading and card styles. */
+.phrase-heading{white-space:normal!important;text-wrap:wrap!important;word-break:normal;overflow-wrap:normal;min-width:0}
+.phrase-heading>.phrase-unit{display:inline-block!important;width:auto!important;max-width:none!important;white-space:nowrap!important;text-wrap:nowrap!important;word-break:normal;overflow-wrap:normal;font:inherit;color:inherit;letter-spacing:inherit}
+.phrase-heading>wbr{display:inline}
+.hero h1 .phrase-unit em{display:inline;width:auto;white-space:inherit!important}
